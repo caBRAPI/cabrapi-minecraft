@@ -1,0 +1,16 @@
+name: "${project.name}"
+version: "${project.version}"
+main: br.com.cabrapi.plugin.altis.ActivatorPlugin
+softdepend: [nLogin]
+author: "Sebastian Jn <sebastianjnuwu@gmail.com>"
+description: "${project.description}"
+
+commands:
+  cabrapi:
+    description: Comando principal
+    usage: /cabrapi reload
+
+permissions:
+  cabrapi.admin:
+    description: Permite comandos administrativos
+    default: op
