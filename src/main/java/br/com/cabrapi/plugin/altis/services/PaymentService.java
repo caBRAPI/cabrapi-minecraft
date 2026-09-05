@@ -194,6 +194,8 @@ public class PaymentService {
                 existingMetadata.put("activatedBy", "plugin");
                 existingMetadata.put("playerName", playerName);
                 existingMetadata.put("playerUUID", playerUUID);
+                existingMetadata.put("deliveredAt", new Date().toInstant().toString());
+                existingMetadata.put("deliveredBy", "PLUGIN");
                 updateReq.setMetadata(existingMetadata);
             } else {
                 Map<String, Object> metadata = new HashMap<>();
@@ -201,6 +203,8 @@ public class PaymentService {
                 metadata.put("activatedBy", "plugin");
                 metadata.put("playerName", playerName);
                 metadata.put("playerUUID", playerUUID);
+                metadata.put("deliveredAt", new Date().toInstant().toString());
+                metadata.put("deliveredBy", "PLUGIN");
                 updateReq.setMetadata(metadata);
             }
 
