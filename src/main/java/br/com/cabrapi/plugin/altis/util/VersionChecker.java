@@ -26,7 +26,7 @@ public final class VersionChecker {
      * URL do arquivo JSON contendo a versão mais recente.
      */
     private static final String VERSION_URL =
-            "https://raw.githubusercontent.com/caBRAPI/cabrapi-minecraft/main/.github/version.json";
+            "https://raw.githubusercontent.com/caBRAPI/cabrapi-minecraft/latest/.github/version.json";
 
     /**
      * Instância principal do plugin.
